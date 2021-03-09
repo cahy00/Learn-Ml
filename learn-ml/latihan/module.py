@@ -1,4 +1,7 @@
-import math as m 
+import csv
 
+f = open('https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv', 'r')
+reader = csv.reader(f)
 
-print("nilai pi adalah:", m.pi)
+for row in reader:
+	print(row)
